@@ -42,8 +42,26 @@
 			<artifactId>spring-boot-starter-test</artifactId>
 			<scope>test</scope>
 		</dependency>
+		<!-- https://mvnrepository.com/artifact/com.alibaba/easyexcel -->
+		<dependency>
+			<groupId>com.alibaba</groupId>
+			<artifactId>easyexcel</artifactId>
+			<version>2.2.7</version>
+		</dependency>
+		<dependency>
+			<groupId>com.alibaba</groupId>
+			<artifactId>fastjson</artifactId>
+			<version>1.2.71</version>
+		</dependency>
 	</dependencies>
 
+<!--	模板的功能很强大，但是第一次使用时，我们有个疑问：模板文件要放到哪里？-->
+<!--	现在，我们都使用 SpringBoot 它会将应用打包成 FatJar，-->
+<!--	我们早已习惯了将各种配置文件放到 resources 目录下，所以 resources 目录是存放模板文件的最佳位置。-->
+<!--	-->
+<!--	配置-->
+
+<!--	要将模板文件放在 resources 目录下，必须在 pom.xml 文件中添加以下配置：-->
 	<build>
 		<plugins>
 			<plugin>
